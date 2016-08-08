@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React counter example</title>
+  <script src="../libs/react.js"></script>
+  <script src="../libs/react-dom.js"></script>
+  <script src="../libs/babel.js"></script>
+</head>
+<body>
+  <h1>React counter example</h1>
+  <div id="app"></div>
+
+  <script type="text/babel" src="digit.js"></script>
+  <script type="text/babel" src="counter.js"></script>
+  <script type="text/babel">
+    ReactDOM.render(
+      <Counter />,
+      document.getElementById('app')
+    );
+  </script>
+</body>
+</html>

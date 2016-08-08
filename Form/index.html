@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React timer example</title>
+  <script src="../libs/react.js"></script>
+  <script src="../libs/react-dom.js"></script>
+  <script src="../libs/babel.js"></script>
+  <style>
+    .valid {
+      color: green;
+    }
+
+    .invalid {
+      color: red;
+    }
+
+    .twitter {
+      position: relative;
+      display: inline-block;
+    }
+
+    .counter {
+      position: absolute;
+      z-index: 1;
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>React form example</h1>
+  <div id="app"></div>
+
+  <script type="text/babel" src="email.js"></script>
+  <script type="text/babel" src="twitter.js"></script>
+  <script type="text/babel" src="form.js"></script>
+  <script type="text/babel">
+    ReactDOM.render(
+      <Form />,
+      document.getElementById('app')
+    );
+  </script>
+</body>
+</html>
